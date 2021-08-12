@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  my-app:
+    build: .
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./:/var/www/rails_api_curriculum
+    command: tail -f /dev/null
